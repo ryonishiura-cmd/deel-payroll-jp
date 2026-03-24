@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deel Payroll ヘルプセンター - Deel Payroll ヘルプセンター</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+<div class="header-inner">
+<a href="index.html" class="logo"><span class="logo-dot"></span>Deel</a>
+<nav class="header-nav">
+<a href="index.html">ヘルプセンター</a>
+<span class="separator">›</span>
+
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-inner">
+<h1>Deel Payroll ヘルプセンター</h1>
+<p>Deel Payrollに関するガイド・マニュアルの日本語版です</p>
+</div>
+</section>
+
+<div class="search-container">
+<div class="search-box">
+<svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+<input type="text" id="searchInput" placeholder="記事を検索..." onkeyup="filterArticles()">
+</div>
+</div>
+
+<main class="main">
+<div class="sections-grid">
+
+<a href="section-about-deel-payroll.html" class="section-card">
+<h3><span class="icon">📋</span>Deel Payrollについて</h3>
+<div class="count">8件の記事</div>
+</a>
+
+<a href="section-contract-creation.html" class="section-card">
+<h3><span class="icon">📝</span>契約の作成と管理</h3>
+<div class="count">11件の記事</div>
+</a>
+
+<a href="section-managing-payroll-employees.html" class="section-card">
+<h3><span class="icon">👥</span>給与従業員の管理</h3>
+<div class="count">6件の記事</div>
+</a>
+
+<a href="section-payroll-reports.html" class="section-card">
+<h3><span class="icon">📊</span>給与レポート</h3>
+<div class="count">11件の記事</div>
+</a>
+
+<a href="section-time-tracking.html" class="section-card">
+<h3><span class="icon">⏱️</span>勤怠管理</h3>
+<div class="count">10件の記事</div>
+</a>
+
+<a href="section-deel-payroll-us.html" class="section-card">
+<h3><span class="icon">🇺🇸</span>Deel Payroll US（セルフサーブ）</h3>
+<div class="count">10件の記事</div>
+</a>
+
+<a href="section-time-off.html" class="section-card">
+<h3><span class="icon">🏖️</span>休暇管理</h3>
+<div class="count">3件の記事</div>
+</a>
+
+<a href="section-expenses-and-allowances.html" class="section-card">
+<h3><span class="icon">💰</span>経費と手当</h3>
+<div class="count">4件の記事</div>
+</a>
+
+<a href="section-terminations.html" class="section-card">
+<h3><span class="icon">📋</span>退職・解雇</h3>
+<div class="count">6件の記事</div>
+</a>
+
+<a href="section-benefits.html" class="section-card">
+<h3><span class="icon">🏥</span>福利厚生</h3>
+<div class="count">4件の記事</div>
+</a>
+
+<a href="section-payroll-connect.html" class="section-card">
+<h3><span class="icon">🔗</span>Payroll Connect</h3>
+<div class="count">11件の記事</div>
+</a>
+
+</div>
+</main>
+
+<script>
+function filterArticles() {
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const cards = document.querySelectorAll('.section-card');
+  cards.forEach(card => {
+    const text = card.textContent.toLowerCase();
+    card.style.display = text.includes(query) ? '' : 'none';
+  });
+}
+</script>
+
+<footer class="footer">
+<div class="footer-inner">
+<p>&copy; 2024 Deel Payroll ヘルプセンター（日本語版）</p>
+<p><a href="https://help.letsdeel.com/hc/en-gb/sections/4416380194833-Deel-Payroll" target="_blank" rel="noopener">英語版（原文）</a></p>
+</div>
+</footer>
+</body>
+</html>
